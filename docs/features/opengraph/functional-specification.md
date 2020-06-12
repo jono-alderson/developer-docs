@@ -30,7 +30,7 @@ The following tags are only output when their conditions are met:
 | `article:author` | The URL of the profile page of the author. | Only populated when the user has a valid profile URL. <br /> Only populated on `post` types. |
 | `article:modified_time` | A timestamp of when the page was last modified. | Only populated on `post` and `page` types. |
 | `article:published_time` | A timestamp of when the page was published. | Only populated on `post` and `page` types. |
-| `og:image` | The URL of the primary image of the page. | Only populated when the page contains a valid image, based on the following hierarchy: <ul><li>A user-defined image (for a specific platform).</li><li>A 'featured' image.</li><li>A prominent image from the page's content.</li><li>n the case of the profile template, the user's Gravatar image.</li><li>The site's fallback/default social image.</li></ul> |
+| `og:image` | The URL of the primary image of the page. | Only populated when the page contains a valid image, based on the following hierarchy: <ul><li>A user-defined image (for a specific platform).</li><li>A 'featured' image.</li><li>A prominent image from the page's content.</li><li>In the case of the profile template, the user's Gravatar image.</li><li>The site's fallback/default social image.</li></ul> |
 | `og:image:width` | The width in pixels of the `og:image`. | Only populated when an `og:image` is set, and its width and height are known. |
 | `og:image:height` | The height in pixels of the `og:image`. | Only populated when an `og:image` is set, and its width and height are known. |
 
@@ -48,6 +48,7 @@ The following tags used to be output by Yoast SEO, but have been removed in rece
 
 | Tag | Description | Reason | Deprecation |
 |---|----|---|---|
+| `fb:admins` | Legacy Facebook control | No longer appears to be supported | Unknown |
 | `article:section` | Legacy Facebook / Open Graph tag. | No longer appears to be supported. | Yoast SEO v14.0 (Apr 2020) |
 | `og:updated_time` | Legacy Facebook / Open Graph tag. | No longer appears to be supported. | Yoast SEO v14.0 (Apr 2020) |
 | `og:image:secure_url` | Defines a (separate) URL for the featured image, available over HTTPS. | Unnecessarily duplicates the `og:image` tag when a site is on HTTPS, and, unnecessary/omitted when the site is not. | Yoast SEO v14.0 (Apr 2020) |
