@@ -6,7 +6,7 @@ custom_edit_url: https://github.com/Yoast/developer-docs/edit/master/docs/featur
 description: An overview of how title tags work in Yoast SEO.
 ---
 
-Every page on a website should include a unique title tag in the `<head>` of the document.
+Every page on a website should include a unique, descriptive title tag in the `<head>` of the document.
 
 A valid title tag takes the following format: `<title>{{VALUE}}</title>`.
 
@@ -41,7 +41,8 @@ Most of these variables should be fairly self-descriptive, and shouldn't need ex
 Any user-input values (i.e., any component of the URL, but in particular, arbitrary strings and refinements such as search terms) should always be appropriately sanitized.
 
 ## User-specified patterns
-Whenever the user has defined an alternate pattern/template for titles (e.g., using Yoast SEO's replacement variables), that pattern should be used in place of the defaults.
+Whenever the user has defined an alternate pattern/template for title values (e.g., using Yoast SEO's replacement variables), that pattern should be used in place of the defaults listed above.
 
 ## User-specified values
 Whenever the user has defined a specific value for a page, that value should be used in place of the default (or type-specific) pattern.
+User-specified values override all patterns and defaults.
